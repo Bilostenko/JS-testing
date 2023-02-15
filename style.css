@@ -20,3 +20,14 @@ ul{
 .bgRed{
   background: red;
 }
+.test-question{
+  font-weight: bold;
+}
+.key-word{
+font-size: 19px;
+font-style: italic;
+}
+pre{
+  color: blue;
+  cursor: pointer;
+}
