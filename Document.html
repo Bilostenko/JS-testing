@@ -4,13 +4,27 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" href="./style.css">
+	<script src="./main.js" defer></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>JS testing</title>
 
 </head>
 
 <body>
-	<form action="file:///C:/Users/user/Downloads/Telegram%20Desktop/Test-JS%20(1).html">
+	<header>
+		<div class="timer__container">
+			<div class="timer__item">
+				<span class="timer__value_mins" data-value="mins">00</span>
+				<span class="timer__label">Minutes</span>
+			</div>
+			<div class="timer__item">
+				<span class="timer__value_secs" data-value="secs">00</span>
+				<span class="timer__label">Seconds</span>
+			</div>
+		</div>
+	</header>
+
+	<form action="">
 		<div class="test-item">
 			<fieldset><span class="test-number">1.</span><span class="test-question">Что обозначает приставка Java в имени
 					JavaScript?</span>
@@ -477,9 +491,141 @@ var res = arr.join();
 			</fieldset>
 		</div>
 
+		<div class="test-item">
+			<fieldset><span class="test-number">34.</span><span class="test-question"> Если в функции явно не вызвать ключевое 
+				слово return, что вернет функция?</span>
+				<ul>
+					<li><input type="radio" name="question34" >A. значение null
+						</li>
+					<li><input type="radio" name="question34" value="true">B. значение undefined
+						</li>
+					<li><input type="radio" name="question34" >C. значение 0
+						</li>
+					<li><input type="radio" name="question34" >D. значение -1
+					</li>
+				</ul>
+			</fieldset>
+		</div>
 
+		<div class="test-item">
+			<fieldset><span class="test-number">35.</span><span class="test-question"> Сколько аргументов может принимать 
+				функция?
+				</span>
+				<ul>
+					<li><input type="radio" name="question35" >A. Функция обязана принимать столько аргументов, сколько 
+						указано аргументов в функции.
+						</li>
+					<li><input type="radio" name="question35" value="true">B. Функция не обязана принимать то количество аргументов, 
+						сколько указана в параметрах
+						</li>
+					<li><input type="radio" name="question35" >C. Функция не может принимать аргументы
+						</li>
+					<li><input type="radio" name="question35" >D. В функцию можно передавать произвольное количество аргументов, но не больше чем указано в параметрах
+					</li>
+				</ul>
+			</fieldset>
+		</div>
 
+		<div class="test-item">
+			<fieldset><span class="test-number">36.</span><span class="test-question"> Для чего используется ключевое слово 
+			<span class="key-word">return</span>	?
+				</span>
+				<ul>
+					<li><input type="radio" name="question36" >A. Для вызова функции.
+						</li>
+					<li><input type="radio" name="question36" >B. Для передачи аргумента в функцию
+						</li>
+					<li><input type="radio" name="question36" >C. Для передачи массива в функцию.
+						</li>
+					<li><input type="radio" name="question36" value="true">D. Для возврата значения из функции
+					</li>
+				</ul>
+			</fieldset>
+		</div>
 
+		<div class="test-item">
+			<fieldset><span class="test-number">37.</span><span class="test-question"> Имеется участок кода:
+					<pre>
+for (var i = 0; i < 10; i++) {
+}
+document.write("i = " + i)
+				</pre>
+				kакой результат увидит пользователь?
+				</span>
+				<ul>
+					<li><input type="radio" name="question37" value="true">A. i=10
+					</li>
+					<li><input type="radio" name="question37">B. i= будет ошибка при запуске браузера</li>
+					<li><input type="radio" name="question37" >C. i= undefined</li>
+					<li><input type="radio" name="question37">D. i=null</li>
+				</ul>
+			</fieldset>
+		</div>
+
+		<div class="test-item">
+			<fieldset><span class="test-number">38.</span><span class="test-question"> Имеется участок кода:
+					<pre>
+var f = function () {
+	result = 5 + 8;
+ };
+ f();
+document.write("res = "+re
+				</pre>
+				kакой результат увидит пользователь?
+				</span>
+				<ul>
+					<li><input type="radio" name="question38" value="true">A. res=13
+					</li>
+					<li><input type="radio" name="question38">B. res = будет ошибка при запуске браузера</li>
+					<li><input type="radio" name="question38" >C. res = undefined;
+					</li>
+					<li><input type="radio" name="question38">D. res =null</li>
+				</ul>
+			</fieldset>
+		</div>
+
+		<div class="test-item">
+			<fieldset><span class="test-number">39.</span><span class="test-question"> Имеется участок кода:
+					<pre>
+var f = function () {
+	result = 5 + 8;
+ };
+ f();
+ document.write("res = "+result);
+				</pre>
+				kакой результат увидит пользователь?
+				</span>
+				<ul>
+					<li><input type="radio" name="question39">A. res=13
+					</li>
+					<li><input type="radio" name="question39"  value="true">B. res = будет ошибка при запуске браузера</li>
+					<li><input type="radio" name="question39" >C. res = undefined;
+					</li>
+					<li><input type="radio" name="question39">D. res =null</li>
+				</ul>
+			</fieldset>
+		</div>
+
+		<div class="test-item">
+			<fieldset><span class="test-number">40.</span><span class="test-question"> Имеется участок кода:
+					<pre>
+var f = function() {
+	result = 8 + 8;};
+ f(5,8,3);
+ document.write("res = "+result);
+				</pre>
+				kакой результат увидит пользователь?
+				</span>
+				<ul>
+					<li><input type="radio" name="question40" value="true">A. res=16
+					</li>
+					<li><input type="radio" name="question40"  >B. res = будет ошибка при запуске браузера;</li>
+					<li><input type="radio" name="question40" >C. res = undefined;
+					</li>
+					<li><input type="radio" name="question40">D. res =null;</li>
+				</ul>
+			</fieldset>
+		</div>
 
 		<div class="student-info">
 			Имя: <input type="text" id="test">
